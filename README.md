@@ -1,48 +1,54 @@
-﻿# AntiAfkKick
-An application, Dalamud and ACT plugin for preventing being auto-kicked from FFXIV due to inactivity.
-## Become a Supporter!
-If you like AntiAfkKick, please consider becoming a supporter on Patreon or via other means! This will help me to continue updating AntiAfkKick and work on new plugins and features and you will receive benefits such as early progress updates, priority support, prioritized feature requests, early testing builds and private tools. 
-- [Subscribe on Patreon (Starts from $1)](https://subscribe.nightmarexiv.org/) - eligible for Discord role
-- [Donate Litecoin, Bitcoin, Tether or other crypto](https://crypto.nightmarexiv.org/) - eligible for Discord role
-- [One-time donation on Ko-Fi](https://donate.nightmarexiv.org/)
+# AntiAfkKick（繁中移植版 · TC12） / Traditional-Chinese Port
 
-### Also:
-- [Explore other plugins I maintain or contributed to](https://explore.nightmarexiv.org/)
-- [Join NightmareXIV Discord server to receive fast support and pings about plugin updates](https://discord.gg/BeeRFKDJD3)
-## Description
+> 防止因閒置被遊戲自動踢出。裝了就忘，免設定。<br>
+> Prevents being auto-kicked from FFXIV for inactivity. Install and forget — no config.
 
-|Attention! Standalone version sometimes may have an issue if you're using a controller and afk without alt-tabbing out of the game. If you experience this issue, alt-tab before going AFK.|
-|---|
+**繁體中文**：這是 **[AntiAfkKick](https://github.com/NightmareXIV/AntiAfkKick)** 的繁體中文客戶端移植版，對應 **FFXIV 7.1 / yanmucorp Dalamud API12（.NET 9）**。本專案僅做相容性移植，**非官方、非原作維護**；所有原始功能與設計著作權歸原作者 **NightmareXIV**。
 
-An application, Dalamud and ACT plugin for preventing being auto-kicked from FFXIV due to inactivity.
+**English**: A Traditional-Chinese-client port of **[AntiAfkKick](https://github.com/NightmareXIV/AntiAfkKick)** targeting **FFXIV 7.1 / yanmucorp Dalamud API12 (.NET 9)**. Compatibility port only — **unofficial and not maintained by the original author**. All original work © **NightmareXIV**.
 
-**Please use responsibly, this is meant to be used for gatherers or if you are waiting for raid/pf/event, not to just afk**
+---
 
-## Dalamud plugin
-Recommended if you are using FFXIV Quick Launcher. Using AntiAfkKick as Dalamud plugin provides advantages of automatically launching together with game and automatic updates. ACT plugin and standalone version must be updated manually if ever needed.
+## 這是什麼 / About
 
-Add my custom repo URL: 
+自動防止你因為長時間沒操作而被伺服器自動登出。安裝後即生效，不需要任何設定。
 
-`https://raw.githubusercontent.com/NightmareXIV/MyDalamudPlugins/main/pluginmaster.json` 
+Stops the game from disconnecting you due to inactivity. Works immediately after install with zero configuration.
 
-then install plugin from plugins list.
+## 安裝 / Installation
 
-Detailed instruction available here: https://github.com/NightmareXIV/MyDalamudPlugins
+**繁體中文**
+1. 使用 **XIVTCLauncher** 啟動繁體中文客戶端。
+2. 遊戲內輸入 `/xlsettings` → 切到 **Experimental** 分頁 → **Custom Plugin Repositories（自訂插件庫）**。
+3. 貼上下列網址並按 **+** 儲存：
+   ```
+   https://raw.githubusercontent.com/lilasrepo/DalamudPlugins/main/pluginmaster.json
+   ```
+4. 輸入 `/xlplugins`，搜尋 **AntiAfkKick (TC12)** → 安裝 → 啟用。
 
-## ACT plugin
-Download it here: https://github.com/NightmareXIV/AntiAfkKick/releases
+**English**
+1. Launch the Traditional-Chinese client with **XIVTCLauncher**.
+2. In-game, type `/xlsettings` → **Experimental** tab → **Custom Plugin Repositories**.
+3. Add this URL and save with **+**:
+   ```
+   https://raw.githubusercontent.com/lilasrepo/DalamudPlugins/main/pluginmaster.json
+   ```
+4. Type `/xlplugins`, search **AntiAfkKick (TC12)** → Install → Enable.
 
-Then copy it to any convenient folder. Open up ACT, go to "Plugins" tab, then to "Plugin Listing", then click "Browse" button and select DLL file you have just downloaded, and finally click "Add/Enable plugin". Upon doing so ACT may ask you to unblock file. In this case press "Yes".
+## 對應版本 / Compatibility
 
+| 項目 / Item | 版本 / Version |
+|---|---|
+| 遊戲 / Game | FFXIV 7.1（繁中客戶端 / TC client） |
+| Dalamud | yanmucorp API12（.NET 9） |
+| 移植自上游 / Ported from upstream | v2.1.0.11 |
 
-## Standalone version
-Just download it and run it. No configuration needed. To exit, access program's tray icon.
+## 原作與授權 / Credits & License
 
-Download link: https://github.com/NightmareXIV/AntiAfkKick/releases/download/2.1.0.4/AntiAfkKick-Standalone.exe
-## This plugin is feature complete
-- This plugin has all major features implemented and there are no plans to add new ones;
-- Existing features are still open for improvement;
-- Any bugs will be fixed and plugin will be updated and maintained;
-- New features can still be implemented via direct commission request or through patron votes during feature campaigns.
+本專案 fork 自 **[NightmareXIV/AntiAfkKick](https://github.com/NightmareXIV/AntiAfkKick)**，授權沿用上游；所有原始功能著作權歸 **NightmareXIV**。<br>
+Forked from **[NightmareXIV/AntiAfkKick](https://github.com/NightmareXIV/AntiAfkKick)**. License follows upstream; all original work © **NightmareXIV**.
 
-This state is not permanent and can be changed in future. Feel free to still leave your feature request!
+## 免責聲明 / Disclaimer
+
+第三方插件，使用風險自負。**移植相關問題請回報到本 repo 的 Issues，請勿打擾上游原作者。**<br>
+Third-party plugin — use at your own risk. **For port-specific issues please open an Issue here; do not contact the upstream author.**
