@@ -1,7 +1,6 @@
-﻿using AntiAfkKick;
+using AntiAfkKick;
 using Dalamud.Game.ClientState.Keys;
 using Dalamud.Hooking;
-using Dalamud.Logging;
 using Dalamud.Plugin;
 using FFXIVClientStructs.FFXIV.Client.UI;
 using System;

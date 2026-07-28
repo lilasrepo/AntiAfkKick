@@ -1,5 +1,4 @@
-﻿using Dalamud.Game;
-using Dalamud.Logging;
+using Dalamud.Game;
 using Dalamud.Plugin;
 using Dalamud.Plugin.Services;
 using System;
